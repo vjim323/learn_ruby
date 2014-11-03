@@ -15,3 +15,8 @@ def start_of_word(string, number)
 	char_array = string.split(//)
 	char_array[0..(number - 1)].join
 end
+
+def first_word(string)
+	char_array = string.split
+	char_array[0]
+end
