@@ -17,3 +17,12 @@ def multiply(array)
 	array.each {|number| multiply *= number}
 	multiply
 end
+
+def factorial(number)
+	counter = number
+	while counter > 1
+		counter -= 1
+		number *= counter
+	end
+	number
+end
