@@ -6,7 +6,7 @@ def shout(string)
 	string.upcase
 end
 
-def repeat(string)
-	output = (string + " ") * 2
+def repeat(string, num = 2)
+	output = (string + " ") * num
 	output.rstrip
 end
