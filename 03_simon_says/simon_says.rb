@@ -17,6 +17,17 @@ def start_of_word(string, number)
 end
 
 def first_word(string)
-	char_array = string.split
-	char_array[0]
+	word_array = string.split
+	word_array[0]
+end
+
+def titleize(string)
+	little_words = ["the", "and", "over"]
+	word_array = string.split
+	word_array.map {|word| 
+		if little_words.include?(word) 
+			word
+		else
+			word.capitalize
+		end }.join(' ')
 end
